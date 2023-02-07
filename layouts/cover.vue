@@ -1,33 +1,32 @@
-<template>
-  <div class="slidev-layout cover" :style="style">
-    <div class="my-auto w-full">
-      <slot />
-    </div>
-    <div class="absolute bottom-12" v-if="coverAuthor || coverDate">
-      <TextWithOptionalLink :link="coverAuthorUrl" :text="coverAuthor" />
-      <span v-if="coverDate">{{ coverAuthor && coverDate ? `, ${coverDate}` : coverDate }}</span>
-    </div>
-    <div class="absolute bottom-0 font-extralight mb-1 mr-2 right-0 text-xs" v-if="coverBackgroundSource">
-      <TextWithOptionalLink :link="coverBackgroundSourceUrl" :text="coverBackgroundSource" />
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { computed } from 'vue';
-import { handleBackground } from '../layout-helper';
+import { computed } from 'vue'
+import { handleBackground } from '../layout-helper'
 
-const { coverBackgroundUrl } = withDefaults(
-  defineProps<{
-    coverAuthor?: string;
-    coverAuthorUrl?: string;
-    coverBackgroundUrl?: string;
-    coverBackgroundSource?: string;
-    coverBackgroundSourceUrl?: string;
-    coverDate?: string | Date;
-  }>(),
-  { coverDate: new Date().toLocaleDateString() },
-);
-
-const style = computed(() => handleBackground(coverBackgroundUrl, true));
+const props = defineProps({
+    background: {
+        type: String,
+    },
+    class: {
+        type: String,
+    },
+})
 </script>
+
+<template>
+    <div class="table w-full h-full">
+        <div class="table-row">
+            <div class="grid grid-cols-2 w-full h-full">
+                <div class="slidev-layout default hu-red w-full h-full-40 big-title" :class="props.class">
+                    <slot />
+                </div>
+                <div class="w-full h-full">
+                    <img src="/slidev-theme-hu/assets/HUICTCover.jpg" style="object-fit: contain;" />
+                </div>
+            </div>
+        </div>
+        <div class="table-row hu-footer">
+            <img class="logo" src="/slidev-theme-hu/assets/svg/hu-logo.svg">
+            <h3 class="payoff hu-red-text">HIER&nbsp;KOMT<br />ALLES&nbsp;SAMEN</h3>
+        </div>
+    </div>
+</template>

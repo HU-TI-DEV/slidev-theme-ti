@@ -54,18 +54,18 @@
     "slidev": ">=0.19.3"
   },
   "slidev": {
-    "colorSchema": "both",
+    "colorSchema": "dark",
     "highlighter": "all",
     "defaults": {
       "fonts": {
-        "sans": "Montserrat",
+        "sans": "Avenir",
         "serif": "Roboto Slab",
-        "mono": "Roboto Mono"
+        "mono": "Cascadia Mono"
       },
       "hightlighter": "prism",
       "themeConfig": {
         "paginationX": "r",
-        "paginationY": "t"
+        "paginationY": "b"
       }
     }
   }

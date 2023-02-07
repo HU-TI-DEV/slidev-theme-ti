@@ -8,4 +8,7 @@
     :x="$slidev.themeConfigs.paginationX"
     :y="$slidev.themeConfigs.paginationY"
   />
+  <LogoOverlay
+      v-if="$slidev.nav.currentPage !== 1"
+  ></LogoOverlay>
 </template>

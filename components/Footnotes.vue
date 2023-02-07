@@ -31,7 +31,7 @@ defineProps({
     type: Boolean,
   },
   x: {
-    default: 'r',
+    default: 'l',
     type: String as PropType<'l' | 'r'>,
     validator: (value) => value === 'l' || value === 'r',
   },
