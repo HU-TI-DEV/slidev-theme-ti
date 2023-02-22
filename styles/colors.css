@@ -1,8 +1,10 @@
 .hu-blue {
     background-color: #00A0D2;
+    color: #FFF;
 }
 .hu-red {
     background-color: #EC0010;
+    color: #FFF;
 }
 .hu-blue-text {
     color: #00A0D2;
@@ -16,6 +18,6 @@
 h1 {
     color: #00A0D2;
 }
-.hu-red h1, .hu-blue h1 {
+.hu-red h1, .hu-blue h1, .hu-red b, .hu-red strong, .hu-blue b, .hu-blue strong {
     color: #FFF;
 }

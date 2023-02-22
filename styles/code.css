@@ -3,7 +3,7 @@
 @import 'prism-theme-vars/to-codemirror.css';
 
 :root {
-  --prism-font-family: var(--slidev-code-font-family);
+  --prism-font-family: "Cascadia Mono";
 }
 
 html:not(.dark) {
@@ -30,7 +30,7 @@ html:not(.dark) {
 
 html.dark {
   --prism-foreground: #d4cfbf;
-  --prism-background: #1b1b1b;
+  --prism-background: #001b33;
   --prism-comment: #758575;
   --prism-string: #d48372;
   --prism-literal: #429988;
@@ -62,12 +62,12 @@ pre[class*='language-'] {
   font-size: 0.9em;
   background: var(--prism-background);
   @apply font-light py-0.5 rounded;
+  padding-left: .2em;
+  padding-right: .2em;
 }
 
-:not(pre) > code:before,
-:not(pre) > code:after {
-  content: '`';
-  opacity: 0.5;
+p + .shiki-container {
+  margin-top: -0.7em;
 }
 
 :not(pre) > code:before {

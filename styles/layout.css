@@ -68,3 +68,38 @@ subtitle {
 center {
     text-align: center;
 }
+
+.slidev-vclick-hidden {
+    display: none;
+}
+
+.slidev-layout td {
+    border-color: rgba(156, 163, 175, 0.2);
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.slidev-layout ul {
+    list-style: none;
+}
+.slidev-layout ul li::before {
+    content: "\2022";
+    color: #00A0D2;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+    position: absolute;
+}
+.slidev-layout ul li li::before, .slidev-layout ul li li li li::before {
+    content: "\25AA";
+}
+.slidev-layout ul li li li::before, .slidev-layout ul li li li li li::before {
+    content: "\2022";
+}
+.slidev-layout li, [dir=ltr] li, .slidev-layout [dir=ltr] li {
+    margin-left: 1em;
+}
+
+.center h1, .center h2, .center h3, .center p {
+    text-align: center;
+}
