@@ -98,6 +98,8 @@ center {
 }
 .slidev-layout li, [dir=ltr] li, .slidev-layout [dir=ltr] li {
     margin-left: 1em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
 }
 
 .center h1, .center h2, .center h3, .center p {
