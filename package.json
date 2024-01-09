@@ -62,11 +62,14 @@
         "serif": "Roboto Slab",
         "mono": "Cascadia Mono"
       },
-      "hightlighter": "prism",
+      "highlighter": "prism",
       "themeConfig": {
         "paginationX": "r",
         "paginationY": "b"
       }
-    }
+    },
+    "addons": [
+      "slidev-component-zoom"
+    ]
   }
 }

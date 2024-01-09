@@ -105,3 +105,9 @@ center {
 .center h1, .center h2, .center h3, .center p {
     text-align: center;
 }
+
+footer {
+    @apply absolute bottom-1 left-3 right-3 p-2;
+    border-top: 1px solid #00A0D2;
+    font-size: 0.7em;
+}
