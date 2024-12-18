@@ -106,6 +106,13 @@ center {
     text-align: center;
 }
 
+.col-left {
+  padding-right: 0.75em;
+}
+.col-right {
+  padding-left: 0.75em;
+}
+
 footer {
     @apply absolute bottom-1 left-3 right-3 p-2;
     border-top: 1px solid #00A0D2;
