@@ -4,3 +4,4 @@ import './fonts.css';
 import './layout.css';
 import './code.css';
 import './colors.css';
+import '../assets/fonts/IosevkaCustom.css';

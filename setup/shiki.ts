@@ -1,10 +1,10 @@
 import { defineShikiSetup } from '@slidev/types';
 
-export default defineShikiSetup(async ({ loadTheme }) => {
+export default defineShikiSetup (() => {
   return {
-    theme: {
-      dark: await loadTheme(require.resolve('./monokai.json')),
-      light: await loadTheme(require.resolve('./monokai.json')),
+    themes: {
+      dark: 'monokai',
+      light: 'solarized-light',
     },
   };
 });

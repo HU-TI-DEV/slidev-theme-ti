@@ -20,12 +20,12 @@ const props = defineProps({
                     <slot />
                 </div>
                 <div class="w-full h-full">
-                    <img src="/slidev-theme-hu/assets/HUICTCover.jpg" style="object-fit: contain;" />
+                    <img src="/slidev-theme-ti/assets/HUICTCover.jpg" style="object-fit: contain;" />
                 </div>
             </div>
         </div>
         <div class="table-row hu-footer">
-            <img class="logo" src="/slidev-theme-hu/assets/svg/hu-logo.svg">
+            <img class="logo" src="/slidev-theme-ti/assets/svg/hu-logo.svg">
             <h3 class="payoff hu-red-text">HIER&nbsp;KOMT<br />ALLES&nbsp;SAMEN</h3>
         </div>
     </div>

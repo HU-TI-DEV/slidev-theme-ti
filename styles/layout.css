@@ -1,5 +1,5 @@
 :root {
-  --slidev-theme-primary: #00A0D2;
+  --slidev-theme-primary: #00A1E1;
 }
 
 .slidev-layout.cover,
@@ -10,13 +10,13 @@
     @apply text-6xl leading-20;
   }
 
-  h1 + p {
+  h1+p {
     @apply -mt-2 opacity-50 mb-4;
   }
 
-  p + h2,
-  ul + h2,
-  table + h2 {
+  p+h2,
+  ul+h2,
+  table+h2 {
     @apply mt-10;
   }
 }
@@ -28,6 +28,7 @@
 .hu-footer {
   height: 100px;
 }
+
 .hu-footer .logo {
   height: 36px;
   position: absolute;
@@ -36,6 +37,7 @@
   left: 0%;
   transform: translate(40px, -68px);
 }
+
 .hu-footer .payoff {
   font-size: 21px;
   line-height: 20px;
@@ -49,7 +51,7 @@
 }
 
 .default {
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .big-title h1 {
@@ -66,55 +68,67 @@ subtitle {
 }
 
 center {
-    text-align: center;
+  text-align: center;
 }
 
 .slidev-vclick-hidden {
-    display: none;
+  display: none;
 }
 
 .slidev-layout td {
-    border-color: rgba(156, 163, 175, 0.2);
-    border-left-width: 1px;
-    border-right-width: 1px;
+  border-color: rgba(156, 163, 175, 0.2);
+  border-left-width: 1px;
+  border-right-width: 1px;
 }
 
 .slidev-layout ul {
-    list-style: none;
-}
-.slidev-layout ul li::before {
-    content: "\2022";
-    color: #00A0D2;
-    display: inline-block;
-    width: 1.2em;
-    margin-left: -1.2em;
-    position: absolute;
-}
-.slidev-layout ul li li::before, .slidev-layout ul li li li li::before {
-    content: "\25AA";
-}
-.slidev-layout ul li li li::before, .slidev-layout ul li li li li li::before {
-    content: "\2022";
-}
-.slidev-layout li, [dir=ltr] li, .slidev-layout [dir=ltr] li {
-    margin-left: 1em;
-    line-height: 1.2em;
-    margin-bottom: 0.5em;
+  list-style: none;
 }
 
-.center h1, .center h2, .center h3, .center p {
-    text-align: center;
+.slidev-layout ul li::before {
+  content: "\2022";
+  color: #00A1E1;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
+  position: absolute;
+}
+
+.slidev-layout ul li li::before,
+.slidev-layout ul li li li li::before {
+  content: "\25AA";
+}
+
+.slidev-layout ul li li li::before,
+.slidev-layout ul li li li li li::before {
+  content: "\2022";
+}
+
+.slidev-layout li,
+[dir=ltr] li,
+.slidev-layout [dir=ltr] li {
+  margin-left: 1em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.center h1,
+.center h2,
+.center h3,
+.center p {
+  text-align: center;
 }
 
 .col-left {
   padding-right: 0.75em;
 }
+
 .col-right {
   padding-left: 0.75em;
 }
 
 footer {
-    @apply absolute bottom-1 left-3 right-3 p-2;
-    border-top: 1px solid #00A0D2;
-    font-size: 0.7em;
+  @apply absolute bottom-1 left-3 right-3 p-2;
+  border-top: 1px solid #00A1E1;
+  font-size: 0.7em;
 }

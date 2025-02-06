@@ -1,5 +1,6 @@
-# slide-theme-hu
-Derived from slidev-theme-academic for Hogeschool Utrecht.
+# slide-theme-ti
+
+Derived from slidev-theme-hu for Hogeschool Utrecht.
 - Following README will not be accurate for everything.
 - Not all layouts work well with HU corporate identity.
 
