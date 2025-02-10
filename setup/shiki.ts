@@ -4,7 +4,10 @@ export default defineShikiSetup (() => {
   return {
     themes: {
       dark: 'monokai',
-      light: 'solarized-light',
+      light: 'monokai',
     },
+    langs: [
+      'cpp', 'c', 'python', 'cmake', 'json', 'asm',
+    ],
   };
 });

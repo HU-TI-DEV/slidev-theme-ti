@@ -16,3 +16,22 @@ p + .shiki-container {
 :not(pre) > code:before {
   margin-right: -0.08em;
 }
+
+.slidev-runner-output {
+  line-height: 18px !important;
+}
+
+.mtku, .mtki, .mtkb {
+  font-style: normal !important;
+  text-decoration: none !important;
+}
+
+[class ^= "bracket-highlighting-"] {
+  font-weight: bold !important;
+  color: black !important;
+}
+
+[class*=" bracket-highlighting-"],
+[class^="bracket-highlighting-"] {
+  color: inherit !important;
+}
