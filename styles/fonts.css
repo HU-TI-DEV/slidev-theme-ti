@@ -78,9 +78,7 @@ body,
   font-size: 1rem;
 }
 
-.slidev-layout h1,
-.slidev-layout h2,
-.slidev-layout h3 {
+.slidev-layout h1 {
   font-family: "Husans";
 }
 

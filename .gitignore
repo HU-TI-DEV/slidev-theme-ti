@@ -11,3 +11,4 @@ components.d.ts
 .env.test.local
 .env.production.local
 .env.local
+*.lock
