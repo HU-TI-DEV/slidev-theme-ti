@@ -26,11 +26,6 @@ p + .shiki-container {
   text-decoration: none !important;
 }
 
-[class ^= "bracket-highlighting-"] {
-  font-weight: bold !important;
-  color: black !important;
-}
-
 [class*=" bracket-highlighting-"],
 [class^="bracket-highlighting-"] {
   color: inherit !important;
