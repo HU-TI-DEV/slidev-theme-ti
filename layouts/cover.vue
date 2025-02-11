@@ -16,7 +16,7 @@ const props = defineProps({
     <div class="table w-full h-full">
         <div class="table-row">
             <div class="grid grid-cols-2 w-full h-full">
-                <div class="slidev-layout default hu-red w-full h-full-40 big-title" :class="props.class">
+                <div class="slidev-layout cover hu-red w-full h-full-40 big-title" :class="props.class">
                     <slot />
                 </div>
                 <div class="w-full h-full">
