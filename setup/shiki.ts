@@ -7,7 +7,7 @@ export default defineShikiSetup (() => {
       light: 'monokai',
     },
     langs: [
-      'cpp', 'c', 'python', 'cmake', 'json', 'asm',
+      'cpp', 'c', 'python', 'cmake', 'json', 'asm', 'bash', 
     ],
   };
 });
